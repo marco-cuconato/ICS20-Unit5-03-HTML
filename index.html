@@ -23,17 +23,28 @@
   <body>
     <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
     <script src="./js/script.js"></script>
-    <h1>If Age</h1>
+    <h1><b>Movie Age Rating</b></h1>
     <br>
-    <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-1">
-  <input type="radio" id="option-1" class="mdl-radio__button" name="options" value="1" checked>
-  <span class="mdl-radio__label">17 and older</span>
-</label> 
-  <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-1">
-  <input type="radio" id="option-1" class="mdl-radio__button" name="options" value="1" checked>
-  <span class="mdl-radio__label">13 and older</span>
-</label>  
-  <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-1">
-  <input type="radio" id="option-1" class="mdl-radio__button" name="options" value="1" checked>
-  <span class="mdl-radio__label">5 and younger</span>
-</label>
+        <!--Radio buttons-->
+        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="over17">
+          <input type="radio" id="over17" class="mdl-radio__button" name="age" value="1" >
+          <span class="mdl-radio__label">over 17</span>
+        </label>
+        <br>
+        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="over13">
+          <input type="radio" id="over13" class="mdl-radio__button" name="age" value="2" >
+          <span class="mdl-radio__label">over 13</span>
+        </label>
+        <br>
+        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="over5">
+          <input type="radio" id="over5" class="mdl-radio__button" name="age" value="3" >
+          <span class="mdl-radio__label">over 5</span>
+        </label>
+        <br>
+      <!-- Accent-colored raised button with ripple -->
+      <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onclick="buttonClicked()">
+  Button
+      </button>
+    <div id="age"></div>
+  </body>
+</html>
